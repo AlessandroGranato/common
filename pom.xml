@@ -11,7 +11,7 @@
 	<description>common module</description>
 
 	<properties>
-		<revision>0.2.0-SNAPSHOT</revision>
+		<revision>0.3.0-SNAPSHOT</revision>
 		<java.version>11</java.version>
 		<flatten.maven.plugin.version>1.1.0</flatten.maven.plugin.version>
 		<lombok.version>1.18.6</lombok.version>
