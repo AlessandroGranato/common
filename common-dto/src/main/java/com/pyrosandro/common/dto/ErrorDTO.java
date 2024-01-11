@@ -14,11 +14,15 @@ import java.util.Objects;
 @Data
 public class ErrorDTO {
 
-    private final HttpStatus httpStatus;
-    private final String message;
+    private HttpStatus httpStatus;
+    private String message;
     private LocalDateTime dateTime;
     private List<ValidationError> validationErrors;
     private String stackTrace;
+
+    public ErrorDTO() {
+        dateTime = LocalDateTime.now();
+    }
 
     public ErrorDTO(HttpStatus httpStatus, String message) {
         this.httpStatus = httpStatus;
